@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Images/Icon.png">
+    <title>Courses</title>
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <img src="/Images/Icon.png" alt="Logo of HEFAMAA" class="gr">
+  </div>
+</header>
+    <div class="header py-3">
+        <img src="/Images/Icon.png" alt="Logo of HEFAMAA" class="gr">
+    </div>
+  </header>
+  
+  <div class="gra mb-2 p-0" style="position: relative; margin-top: -65px;">
+ <!-- <div class="container-fluid overlay" id="overlayer" style="position: absolute; height: 900px; margin-top: 40px; background: url(/Images/blur.avif); display: none; overflow: hidden; background-size: 2000px; filter: blur(20px); opacity: 90%;">
+</div> -->
+    <div class="container-fluid pop-in" id="pop-uppy" style="backdrop-filter:  blur(5px);">
+        <div class="container p-5 rounded-3" style="background-color: rgb(255, 255, 255); height: 300px; margin-top: 300px;">
+            <div class="d-flex justify-content-between">
+                <img src="/Images/Icon.png" alt="Logo of HEFAMAA" class="gr">
+                <div  onclick="closePopUp()"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentcolor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+                  </svg>
+                </div>
+            </div>
+            <p class="text-center fs-5">Rate The Service</p>
+              <div class="d-flex justify-content-center pb-4 pt-2" id="starRating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gray" class="bi bi-star px-1 star" viewBox="0 0 16 16" data-index="1">
+                  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gray" class="bi bi-star px-1 star" viewBox="0 0 16 16" data-index="2">
+                  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gray" class="bi bi-star px-1 star" viewBox="0 0 16 16" data-index="3">
+                  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gray" class="bi bi-star px-1 star" viewBox="0 0 16 16" data-index="4">
+                  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gray" class="bi bi-star px-1 star" viewBox="0 0 16 16" data-index="5">
+                  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+              </div>
+              
+            <button type="submit" onclick="clicky()" class="btn btn-primary border-0 w-100" style="background-color: rgb(46, 48, 59); height: 60px;">Submit</button>
+        </div>
+    </div>
+
+  <div class="gra p-0" style="position: relative;">
+    <div class="container-fluid pop-in mt-5" id="finished" style="backdrop-filter:  blur(5px);">
+        <div class="container-fluid p-5 rounded-3" style="background-color: rgb(255, 255, 255); height: 300px; margin-top: 233px;">
+            <div class="container-fluid d-flex justify-content-end" onclick="closePopUp()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </div>
+
+            <div class="container-fluid d-flex justify-content-center" style="margin-top: 15px; margin-bottom: 40px; height: 50px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+              </svg>
+            </div>
+            <p class="text-center fs-5">Thank you for your Feedback</p>
+        </div>
+    </div>
+
+        <div class="gra">
+            <h1 class="op">Feedback Form</h1>
+            <h1 class="ops">Rate the service</h1>
+        </div>        
+  </div>
+  <div class="grey">
+    <div class="survey-form">
+      <div class="question">
+          <h3>Quality Of Customer Service</h3>
+          <div class="options">
+            <label>
+              <p class="p">Very poor</p>
+              
+              <input type="radio" name="customer_Service" value="very_poor">
+            </label>
+            <label>
+              <p class="p">Poor</p>
+              
+              <input type="radio" name="customer_Service" value="poor">
+            </label>
+            <label>
+              <p class="p">Average</p>
+              
+              <input type="radio" name="customer_Service" value="average">
+            </label>
+            <label>
+              <p class="p">Good</p>
+              
+              <input type="radio" name="customer_Service" value="good">
+            </label>
+            <label>
+              <p class="p">Excellent</p>
+              
+              <input type="radio" name="customer_Service" value="excellent">
+            </label>
+          </div>
+      </div>
+  
+      <div class="question">
+        <h3>Quality Of Medical Service</h3>
+        <div class="options">
+          <label>
+              <p class="p">Very poor</p>
+            
+            <input type="radio" name="medical_service" value="very_poor">
+          </label>
+          <label>
+              <p class="p">Poor</p>
+            
+            <input type="radio" name="medical_service" value="poor">
+          </label>
+          <label>
+              <p class="p">Average</p>
+            
+            <input type="radio" name="medical_service" value="average">
+          </label>
+          <label>
+              <p class="p">Good</p>
+            
+            <input type="radio" name="medical_service" value="good">
+          </label>
+          <label>
+              <p class="p">Excellent</p>
+            
+            <input type="radio" name="medical_service" value="excellent">
+          </label>
+        </div>
+      </div>
+  
+      <div class="question">
+        <h3>Quality Of Facility</h3>
+        <div class="options">
+          <label>
+              <p class="p">Very poor</p>
+            
+            <input type="radio" name="facility" value="very_poor">
+          </label>
+          <label>
+              <p class="p">Poor</p>
+            
+            <input type="radio" name="facility" value="poor">
+          </label>
+          <label>
+              <p class="p">Average</p>
+            
+            <input type="radio" name="facility" value="average">
+          </label>
+          <label>
+              <p class="p">Good</p>
+            
+            <input type="radio" name="facility" value="good">
+          </label>
+          <label>
+              <p class="p">Excellent</p>
+            
+            <input type="radio" name="facility" value="excellent">
+          </label>
+        </div>
+      </div>
+  
+      <div class="question">
+        <h3>Quality Of Professional Advice</h3>
+        <div class="options">
+          <label>
+              <p class="p">Very poor</p>
+            <input type="radio" name="professional_advice" value="very_poor">
+          </label>
+          <label>
+              <p class="p">Poor</p>          
+            <input type="radio" name="professional_advice" value="poor">
+          </label>
+          <label>
+              <p class="p">Average</p>          
+            <input type="radio" name="professional_advice" value="average">
+          </label>
+          <label>
+              <p class="p">Good</p>          
+            <input type="radio" name="professional_advice" value="good">
+          </label>
+          <label>
+              <p class="p">Excellent</p>          
+            <input type="radio" name="professional_advice" value="excellent">
+          </label>
+        </div>
+      </div>
+      
+    </div>
+    <div class="jem">      
+          
+    <div class="feed">
+          <div class="p-2">
+              <form>
+                  <div class="mb-3 tuah">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please Enter Your Email">
+                  </div>
+                  <div class="mb-3 tuah">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="0123456789">
+                  </div>
+                  <div class="mb-3 tuah">
+                    <label for="exampleInputPassword1" class="form-label"><p>Additional Feedback <small>(optional)</small></p></label>
+                    <textarea id="comments" name="comments" rows="4" class="form-control" cols="50" placeholder="Write your comment here..."></textarea>
+                  </div>
+                </form>
+                <a href="#pop-uppy"><button type="submit" class="btn btn-primary border-0 w-100" onclick="openPopUp()" style="background-color: rgb(46, 48, 59); height: 60px;">Submit</button></a>
+          </div>
+          <div class="bark">
+              <p class="fs-6">Powered By</p>
+              <img src="/Images/Communications Document for Three Groups 1.png" class="p-0" width="20%">
+          </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="/src/js/pop-up.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/src/js/custom.js"></script>
+</html>
